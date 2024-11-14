@@ -1,0 +1,604 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.bg{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 107px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    z-index: 2;
+}
+.nav-center{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.nav-center ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+ul li{
+    list-style: none;
+}
+.adjust{
+    position: relative;
+    bottom: 2px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.4s;
+    font-family: "Josefin Sans", sans-serif;
+}
+li a:hover{
+    color: RGB(255, 32, 32);
+    transition: 0.4s;
+}
+.hot{
+    color: white;
+    border: none;
+    border-radius: 7px;
+    height: 20px;
+    width: 37px;
+    background-color: #FF003C;
+    position: absolute;
+    bottom: 20px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    box-shadow: 0px 0px 1px black;
+}
+.nav-icons{
+    height: 100%;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-list{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-list i{
+    font-size: 20px;
+    transition: 0.5s;
+}
+.icon-list:hover i{
+    color: RGB(255, 32, 32);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* hero section */
+.hero-part{
+    width: 100%;
+    height: auto;
+    background-color: #F0F0F2;
+    display: flex;
+    margin-top: 100px;
+}
+.hero-detail{
+    width:70%;
+    height: 100%;
+    background-color: transparent;
+    padding-left: 190px;
+    padding-block: 310px;
+}
+.hero-detail h1{
+    font-size: 96px;
+    font-weight: 700;
+    color: #0B1C39;
+    line-height: 115px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.hero-detail p{
+    padding-top: 25px;
+    line-height: 27px;
+    font-size: 17px;
+    color: #212025;
+}
+.hero-detail button{
+    margin-top: 60px;
+    height: 50px;
+    width: 155px;
+    color: white;
+    cursor: pointer;
+    font-size: 16.5px;
+    position: relative;
+    border: none;
+    background-color: #4e4e4e;
+    font-family: "Josefin Sans", sans-serif;
+    z-index: 1;
+}
+.hero-detail button::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: 0.5s;
+    width: 0%;
+    background-color: #FF2020;
+}
+.hero-detail button:hover::before{
+    width: 100%;
+}
+.hero-img{
+    width: 25%;
+    height: 100%;
+}
+.hero-img img{
+    height: 100%;
+    width: 100%;
+}
+/* main section */
+.price-item{
+    margin-top: 170px;
+    width: 100%;
+    height: auto;
+    padding-inline: 190px;
+}
+.price-item h1{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.price-list{
+    width: 31.4%;
+    height: 80%;
+    text-align: center;
+}
+.img-item{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-item img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.price-list:hover .img-item img{
+    transition: 0.5s;
+    transform: scale(1.04);
+}
+.price-list h2{
+    padding-top: 30px;
+    color: #444444;
+    font-family: "Josefin Sans", sans-serif;
+}
+.price-list p{
+    padding-top: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF2020;
+    font-family: "Josefin Sans", sans-serif;
+}
+/* <!-- image section --> */
+.image-group{
+    width: 100%;
+    height: 97vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 170px;
+}
+.img-box{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.img-box img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+.img-left{
+    height: 100%;
+    width: 48%;
+    position: relative;
+}
+.img-left img{
+    height: 100%;
+    width: 100%;
+}
+.img-part{
+    width: 100%;
+    height: 48%;
+}
+#bottom{
+    position: absolute;
+    bottom: 0px;
+}
+.heading-part{
+    text-align: center;
+    margin-top: 180px;
+}
+.heading-part h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+.heading-part p{
+    padding-top: 15px;
+    line-height: 30px;
+    color: #777777;
+}
+.item{
+    width: 100%;
+    height: auto;
+    padding-inline: 190px;
+    margin-top: 65px;
+}
+.item-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item-list{
+    height: 100%;
+    position: relative;
+}
+.item-list:hover .button-bottom{
+    opacity: 1;
+    transition: 0.5s;
+}
+.item-list i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+}
+.item-list:hover i{
+    opacity: 1;
+    transition: 0.5s;
+}
+.img-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3.1px solid #FF2020;
+}
+.button-bottom{
+    width: 100%;
+    height: 65px;
+    background-color: #FF2020;
+    position: absolute;
+    bottom: 85px;
+    border: none;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.item-name{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #444444;
+    text-align: center;
+    padding-top: 25px;
+}
+.item-price{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+.item-button{
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+}
+.item-more{
+    text-align: center;
+    border: none;
+    background-color: #FF2020;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    height: 60px;
+    width: 255px;
+    position: relative;
+    z-index: 1;
+}
+.item-more::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width: 0%;
+    transition: 0.5s;
+    background-color: #4A4A4B;
+}
+.item-more:hover::before{
+    width: 100%;
+}
+/* video section */
+.videobox{
+    width: 100%;
+    height: 92vh;
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: left;
+    background-image: url(./Assets/sectin_bg1.png);
+    transition: 0.5s;
+    position: relative;
+}
+.videobox:hover{
+    opacity: 0.9; 
+    transition: 0.5s;
+}
+.videobox:hover .videoplay{
+    width: 95px;
+    height: 95px;
+    transition: 0.5s;
+}
+.videobox:hover .videoplay a{
+    font-size: 40px;
+    transition: 0.5s;
+}
+.videoplay{
+    width: 85px;
+    height: 85px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.5s;
+    position: relative;
+}
+.videoplay a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    transition: 0.5s;
+}
+.videoplay a:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: #FF2020;
+}
+.videoplay a i{
+    position: absolute;
+    left: 33%;
+}
+.next-video{
+    width: 34%;
+    height: 137px;
+    background-color: #FD1F21;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next-video h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    position: relative;
+    top: 5px;
+}
+.next-video h3 i{
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 200px;
+    cursor: pointer;
+}
+/* show watch item */
+.watch-container{
+    width: 100%;
+    height: auto;
+    padding-inline: 190px;
+}
+.watch-box{
+    width: 100%;
+    height: 100%;
+    margin-top: 170px;
+    display: flex;
+}
+.watch-detail{
+    width: 51.35%;
+    height: 100%;
+    padding-block: 128px;
+}
+.watch-detail h2{
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+}
+.watch-detail p{
+    font-size: 17px;
+    color: #777777;
+    padding-top: 40px;
+    line-height: 30px;
+}
+.watch-image{
+    width: 48.65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.watch-image img{
+    height: 100%;
+    width: 100%;
+}
+/* payment system section */
+.system-container{
+    width: 100%;
+    height: auto;
+    padding-inline: 190px;
+    margin-top: 180px;
+}
+.redbox-payment{
+    width: 100%;
+    height: 100%;
+    background-color: #EA0000;
+    padding-left: 40px;
+    padding-right: 55px;
+    padding-block: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.systembox{
+    height: 100%;
+    width: auto;
+}
+.systembox svg{
+    color: white;
+}
+.systembox h6{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding-top: 17px;
+}
+.systembox p{
+    color: #D3D1D1;
+    padding-top: 17px;
+    line-height: 30px;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: auto;
+    padding-inline: 190px;
+    margin-top: 140px;
+}
+.footer-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+    height: 100%;
+    width: auto;
+}
+.footer-list p{
+    padding-top: 35px;
+    color: #868C98;
+    line-height: 27px;
+}
+.footer-list h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer-list ul{
+    padding-top: 24px;
+}
+.footer-list ul li{
+    transition: 0.4s;
+}
+.footer-list ul li a{
+    font-family: "Roboto", sans-serif;
+    color: #0c417b;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 36px;
+    transition: 0.4s;
+}
+.footer-list ul li:hover{
+    transition: 0.4s;
+    transform: translateX(8px);
+}
+.footer-list ul li:hover a{
+    color: #FF2020;
+    transition: 0.4s;
+}
+.last-line{
+    width: 100%;
+    height: auto;
+    padding-inline: 190px;
+    margin-top: 80px;
+}
+.last-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.last-item{
+    width: auto;
+    height: 100%;
+    font-weight: 300;
+    color: #292d31;
+    display: flex;
+    gap: 19px;
+}
+.last-item p i{
+    color: #FF2020;
+}
+.brand-name{
+    color: #FF2020;
+    cursor: pointer;
+}
+.last-item .icon i{
+    font-size: 17px;
+    transition: 0.4s;
+}
+.last-item .icon:hover i{
+    transform: rotate(180deg);
+    transition: 0.4s;
+    color: #FF2020;
+}
